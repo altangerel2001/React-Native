@@ -8,7 +8,7 @@ export default function App() {
     <View style={{marginTop: 55}}>
 
       <Pressable onPress={()=>alert('та нийтлэл бичих үүу?')} onLongPress={()=>alert('та өөрт таалагдсан нийтлэлээ бичихдээ нийтлэл хэсэгт нэг удаа дарна уу')}>
-      <Text style={{textAlignVertical: "center",textAlign: "center",}} >Та өөрт таалагдсан зүйлээ нийтлээрэй</Text>
+      <Text style={{textAlignVertical: "center",textAlign: "center",}} >та унших бүлгээ хайна уу?</Text>
       </Pressable> 
 
       <TextInput 
@@ -40,6 +40,22 @@ export default function App() {
 
       />
         <Image source={require("./assets/Vagabond-wallpaper-takehiko-inoue-Vagabond-manga-.jpg")} style={{height:700, width:400}}></Image>
+      
+        <Image source={require("./assets/001.jpg")} style={{height:700, width:400}}></Image>
+        <Image source={require("./assets/002.jpg")} style={{height:700, width:400}}></Image>
+        <Image source={require("./assets/003.jpg")} style={{height:700, width:400}}></Image>
+        <Image source={require("./assets/005.jpg")} style={{height:700, width:400}}></Image>
+        <Image source={require("./assets/006.jpg")} style={{height:700, width:400}}></Image>
+        <Image source={require("./assets/007.jpg")} style={{height:700, width:400}}></Image>
+        <Image source={require("./assets/008.jpg")} style={{height:700, width:400}}></Image>
+        <Image source={require("./assets/009.jpg")} style={{height:700, width:400}}></Image>
+        <Image source={require("./assets/010.jpg")} style={{height:700, width:400}}></Image>
+        <Image source={require("./assets/011.jpg")} style={{height:700, width:400}}></Image>
+        <Image source={require("./assets/012.jpg")} style={{height:700, width:400}}></Image>
+        <Image source={require("./assets/013.jpg")} style={{height:700, width:400}}></Image>
+        <Image source={require("./assets/014.jpg")} style={{height:700, width:400}}></Image>
+        <Image source={require("./assets/015.jpg")} style={{height:700, width:400}}></Image>
+        
     
 
 
