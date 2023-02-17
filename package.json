@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "mobile-app": "file:Mobile-app"
+  }
+}
