@@ -5,8 +5,7 @@ export default function App() {
   return (
     
     <SafeAreaView style={styles.container}>
-
-
+        <Text>1</Text>
         <View>
         <Pressable onPress={()=>alert('та нийтлэл бичих үүу?')} onLongPress={()=>alert('та өөрт таалагдсан нийтлэлээ бичихдээ нийтлэл хэсэгт нэг удаа дарна уу')}>
           <Text style={{textAlignVertical: "center",textAlign: "center",}} >та унших бүлгээ хайна уу?</Text>
@@ -14,6 +13,10 @@ export default function App() {
         </View>
       <ScrollView>
         <ScrollView style={styles.scroll} horizontal={true} >
+        <View style={styles}>
+        
+          <Image source={require("../Mplus/assets/vagabond.jpg")} style={{height:250, width:200}}></Image>
+          </View>
           <View style={styles}>
           <Image source={require("../Mplus/assets/vagabond_1.jpg")} style={{height:300, width:300}}></Image>
           </View>
@@ -23,10 +26,14 @@ export default function App() {
           <View style={styles}>
           <Image source={require("../Mplus/assets/vagabond_3.jpg")} style={{height:300, width:300}}></Image>
           </View>
+          <Text>1</Text>
         </ScrollView>
 
 
         <ScrollView style={styles.scroll} horizontal={true}>
+        <View style={styles}>
+          <Image source={require("../Mplus/assets/berserk.jpg")} style={{height:400, width:300}}></Image>
+          </View>
           <View style={styles}>
           <Image source={require("../Mplus/assets/berserk1.jpg")} style={{height:300, width:300}}></Image>
           </View>
@@ -40,6 +47,9 @@ export default function App() {
         </ScrollView>
 
          <ScrollView style={styles.scroll} horizontal={true} >
+         <View style={styles}>
+          <Image source={require("../Mplus/assets/vinland.jpg")} style={{height:250, width:300}}></Image>
+          </View>
           <View style={styles}>
           <Image source={require("../Mplus/assets/vagabond_1.jpg")} style={{height:300, width:300}}></Image>
           </View>
