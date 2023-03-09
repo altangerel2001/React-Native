@@ -1,119 +1,63 @@
-import React from "react";
-import { View, Text, StyleSheet, ScrollView, SafeAreaView, Image, Pressable} from "react-native";
+import { View, Text, StyleSheet, ScrollView , TouchableOpacity, Image, SafeAreaView} from 'react-native'
+import React from 'react'
+import { useNavigation } from '@react-navigation/native'
 
-export default function App() {
+const HomeScreen = () =>{
+  const navigator = useNavigation();
   return (
-    
-    <SafeAreaView style={styles.container}>
-        <Text>1</Text>
-        <View>
-        <Pressable onPress={()=>alert('та нийтлэл бичих үүу?')} onLongPress={()=>alert('та өөрт таалагдсан нийтлэлээ бичихдээ нийтлэл хэсэгт нэг удаа дарна уу')}>
-          <Text style={{textAlignVertical: "center",textAlign: "center",}} >та унших бүлгээ хайна уу?</Text>
-        </Pressable> 
-        </View>
-      <ScrollView>
-        <ScrollView style={styles.scroll} horizontal={true} >
-        <View style={styles}>
-        
-          <Image source={require("../Mplus/assets/vagabond.jpg")} style={{height:250, width:200}}></Image>
-          </View>
-          <View style={styles}>
-          <Image source={require("../Mplus/assets/vagabond_1.jpg")} style={{height:300, width:300}}></Image>
-          </View>
-          <View style={styles}>
-            <Image source={require("../Mplus/assets/vagabond_2.jpg")} style={{height:300, width:300}}></Image>
-          </View>
-          <View style={styles}>
-          <Image source={require("../Mplus/assets/vagabond_3.jpg")} style={{height:300, width:300}}></Image>
-          </View>
-          <Text>1</Text>
+  <ScrollView>
+    <View style={style.container}>
+      <View style={style.text}> 
+        <Text style={style.text1}>Сайн байна уу</Text>
+        <Text>abc</Text>
+      </View>
+      <View style={style.dood}>
+      <ScrollView style ={style.scroll} horizontal={true}>
+        <TouchableOpacity onPress={() => navigator.navigate('Detail')}>
+          <Image source={require("../Mplus/assets/berserk.jpg")} style={style.draft1}></Image>
+
+        </TouchableOpacity>
+        <Image source={require("../Mplus/assets/vagabond.jpg")} style={style.draft2}></Image>
+        <Image source={require("../Mplus/assets/vinland.jpg")} style={style.draft3}></Image>
         </ScrollView>
-
-
-        <ScrollView style={styles.scroll} horizontal={true}>
-        <View style={styles}>
-          <Image source={require("../Mplus/assets/berserk.jpg")} style={{height:400, width:300}}></Image>
-          </View>
-          <View style={styles}>
-          <Image source={require("../Mplus/assets/berserk1.jpg")} style={{height:300, width:300}}></Image>
-          </View>
-          <View style={styles}>
-          <Image source={require("../Mplus/assets/berserk2.jpg")} style={{height:300, width:300}}></Image>
-          </View>
-          <View style={styles}>
-          <Image source={require("../Mplus/assets/berserk3.jpg")} style={{height:300, width:300}}></Image>
-          </View>
-          
-        </ScrollView>
-
-         <ScrollView style={styles.scroll} horizontal={true} >
-         <View style={styles}>
-          <Image source={require("../Mplus/assets/vinland.jpg")} style={{height:250, width:300}}></Image>
-          </View>
-          <View style={styles}>
-          <Image source={require("../Mplus/assets/vagabond_1.jpg")} style={{height:300, width:300}}></Image>
-          </View>
-          <View style={styles}>
-            <Image source={require("../Mplus/assets/vagabond_2.jpg")} style={{height:300, width:300}}></Image>
-          </View>
-          <View style={styles}>
-          <Image source={require("../Mplus/assets/vagabond_3.jpg")} style={{height:300, width:300}}></Image>
-          </View>
-        </ScrollView>
-
-      </ScrollView>
-    </SafeAreaView>
-  );
+      </View>
+    </View>
+  </ScrollView>
+  )
 }
 
-const styles = StyleSheet.create({
+
+
+const style = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "black",
-  },
-  deed: {
-    flex: 4,
-    backgroundColor: "aqua",
-  },
-  dood: {
-    flex: 3,
-    backgroundColor: "yellow",
+    flex: 100,
+    flexDirection: 'column',
   },
   draft1: {
+    width : 100,
     height: 100,
-    width: 100,
-    backgroundColor: "pink",
     margin: 10,
   },
   draft2: {
+    width : 100,
     height: 100,
-    width: 100,
-    backgroundColor: "blue",
     margin: 10,
   },
   draft3: {
+    width : 100,
     height: 100,
-    width: 100,
-    backgroundColor: "green",
     margin: 10,
   },
-  draft4: {
-    height: 100,
-    width: 100,
-    backgroundColor: "yellow",
-    margin: 10,
-  },
-  draft5: {
-    height: 100,
-    width: 100,
-    backgroundColor: "aqua",
-    margin: 10,
-  },
-  scroll: {
+  scroll:{
     backgroundColor: "white",
-    flexDirection: "row",
-    padding: 20,
-    margin: 10,
-    height: 270,
+
   },
-}); 
+  text: {
+    flexDirection: 'row'
+  },
+  text1:{
+
+  }
+})
+
+export default HomeScreen
