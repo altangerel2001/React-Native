@@ -1,19 +1,29 @@
-import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/stack';
-import HomeScreen from './source/screens/Home';
-import DetailScreen from './source/screens/details';
-import { SafeAreaView } from 'react-native-safe-area-context';
-
-const Stack = createNativeStackNavigator();
-function App() {
- return (
- <NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen name="НҮҮР" component={HomeScreen} />
-      <Stack.Screen name="Detail" component={DetailScreen} />
-    </Stack.Navigator>
- </NavigationContainer>
- );
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View , Image, ScrollView, Pressable, SafeAreaView, Button , TextInput} from 'react-native';
+const DetailScreen = () =>{
+  return (
+    <SafeAreaView style ={style.container}>
+      <ScrollView>
+        <View>
+          <Image source={require("../../assets/berserk.jpg")} style={style.draft1}></Image>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+  );
 }
-export default App
+
+const style = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  draft1:{
+    height: 200,
+    width: 200,
+  }
+});
+
+
+export default DetailScreen
