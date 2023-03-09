@@ -1,11 +1,17 @@
 import React from "react";
-import { View, Text, StyleSheet, ScrollView, SafeAreaView, Image} from "react-native";
+import { View, Text, StyleSheet, ScrollView, SafeAreaView, Image, Pressable} from "react-native";
 
 export default function App() {
   return (
+    
     <SafeAreaView style={styles.container}>
 
 
+        <View>
+        <Pressable onPress={()=>alert('та нийтлэл бичих үүу?')} onLongPress={()=>alert('та өөрт таалагдсан нийтлэлээ бичихдээ нийтлэл хэсэгт нэг удаа дарна уу')}>
+          <Text style={{textAlignVertical: "center",textAlign: "center",}} >та унших бүлгээ хайна уу?</Text>
+        </Pressable> 
+        </View>
       <ScrollView>
         <ScrollView style={styles.scroll} horizontal={true} >
           <View style={styles}>
@@ -44,7 +50,7 @@ export default function App() {
           <Image source={require("../Mplus/assets/vagabond_3.jpg")} style={{height:300, width:300}}></Image>
           </View>
         </ScrollView>
-        
+
       </ScrollView>
     </SafeAreaView>
   );
@@ -100,4 +106,4 @@ const styles = StyleSheet.create({
     margin: 10,
     height: 270,
   },
-});
+}); 
