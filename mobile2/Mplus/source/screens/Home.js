@@ -60,7 +60,7 @@ const HomeScreen = () =>{
           </ScrollView>
   
            <ScrollView style={styles.scroll} horizontal={true} >
-           <View style={styles.draft2}>
+           <View  style={styles.draft4}>
             <Image source={require("../../assets/vinland.jpg")} style={{height:250, width:300}}></Image>
             </View>
             <View style={styles.draft2}>
@@ -69,7 +69,7 @@ const HomeScreen = () =>{
             <View style={styles.draft2}>
               <Image source={require("../../assets/vagabond_2.jpg")} style={{height:300, width:300}}></Image>
             </View>
-            <View style={styles.draft2s}>
+            <View style={styles.draft2}>
             <Image source={require("../../assets/vagabond_3.jpg")} style={{height:300, width:300}}></Image>
             </View>
           </ScrollView>
@@ -111,10 +111,10 @@ const HomeScreen = () =>{
       margin: 10,
     },
     draft4: {
-      height: 100,
-      width: 100,
+      height: 10,
+      width: 10,
       backgroundColor: "yellow",
-      margin: 10,
+      margin: 15,
     },
     draft5: {
       height: 100,
@@ -130,9 +130,9 @@ const HomeScreen = () =>{
       height: 270,
     },
     input:{
-            height:40,
-            margin:25,
-            borderWidth:3,
+            height:20,
+            margin:15,
+            borderWidth:2,
             padding:10,
              borderColor:'white',
           },
