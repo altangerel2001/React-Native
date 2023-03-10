@@ -7,8 +7,8 @@ const HomeScreen = () =>{
   return (    
       <SafeAreaView style={styles.container}>
           <View>
-          <Pressable onPress={()=>alert('та нийтлэл бичих үүу?')} onLongPress={()=>alert('та өөрт таалагдсан нийтлэлээ бичихдээ нийтлэл хэсэгт нэг удаа дарна уу')}>
-            <Text style={{textAlignVertical: "center",textAlign: "center",}} >та унших бүлгээ хайна уу?</Text>
+          <Pressable onPress={()=>alert('та нийтлэл бичих үү?')} onLongPress={()=>alert('та өөрт таалагдсан нийтлэлээ бичихдээ нийтлэл хэсэгт нэг удаа дарна уу')}>
+            <Text style={{textAlignVertical: "center",textAlign: "center" ,}} >та унших бүлгээ хайна уу?</Text>
           </Pressable> 
           <TextInput style={styles.input}/>
           </View>
@@ -17,11 +17,12 @@ const HomeScreen = () =>{
           <View style={styles}>
 
             <TouchableOpacity onPress={() => navigator.navigate('Vagobond 1р Бүлэг')}>
+        
             <Image source={require("../../assets/vagabond.jpg")} style={{height:250, width:200}}></Image>
             </TouchableOpacity>
             
             </View>
-            <View style={styles}>
+            <View style={styles.draft2}>
             <Image source={require("../../assets/vagabond_1.jpg")} style={{height:300, width:300}}></Image>
             </View>
             <View style={styles}>
@@ -46,29 +47,29 @@ const HomeScreen = () =>{
             <Image source={require("../../assets/berserk.jpg")} style={{height:250, width:200}}></Image>
             </TouchableOpacity>
             </View>
-            <View style={styles}>
+            <View style={styles.draft2}>
             <Image source={require("../../assets/berserk1.jpg")} style={{height:300, width:300}}></Image>
             </View>
-            <View style={styles}>
+            <View style={styles.draft2}>
             <Image source={require("../../assets/berserk2.jpg")} style={{height:300, width:300}}></Image>
             </View>
-            <View style={styles}>
+            <View style={styles.draft2}>
             <Image source={require("../../assets/berserk3.jpg")} style={{height:300, width:300}}></Image>
             </View>
             
           </ScrollView>
   
            <ScrollView style={styles.scroll} horizontal={true} >
-           <View style={styles}>
+           <View style={styles.draft2}>
             <Image source={require("../../assets/vinland.jpg")} style={{height:250, width:300}}></Image>
             </View>
-            <View style={styles}>
+            <View style={styles.draft2}>
             <Image source={require("../..//assets/vagabond_1.jpg")} style={{height:300, width:300}}></Image>
             </View>
-            <View style={styles}>
+            <View style={styles.draft2}>
               <Image source={require("../../assets/vagabond_2.jpg")} style={{height:300, width:300}}></Image>
             </View>
-            <View style={styles}>
+            <View style={styles.draft2s}>
             <Image source={require("../../assets/vagabond_3.jpg")} style={{height:300, width:300}}></Image>
             </View>
           </ScrollView>
@@ -81,7 +82,7 @@ const HomeScreen = () =>{
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: "pink",
+      backgroundColor: "gray",
     },
     deed: {
       flex: 4,
@@ -99,9 +100,9 @@ const HomeScreen = () =>{
     },
     draft2: {
       height: 100,
-      width: 100,
+      width: 300,
       backgroundColor: "blue",
-      margin: 10,
+      margin: 20,
     },
     draft3: {
       height: 100,
@@ -133,7 +134,7 @@ const HomeScreen = () =>{
             margin:25,
             borderWidth:3,
             padding:10,
-             borderColor:'black',
+             borderColor:'white',
           },
   }); 
     

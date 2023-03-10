@@ -1,119 +1,89 @@
-import React from "react";
-import { View, Text, StyleSheet, ScrollView, SafeAreaView } from "react-native";
+import {   View,   Text,   StyleSheet,   Pressable,   SafeAreaView,   ScrollView,   Image, } from "react-native"; 
+import React from "react"; import {   Ionicons,   Entypo,   MaterialCommunityIcons,   Octicons,   AntDesign, } from "@expo/vector-icons";  
+export default function Home({ navigation }) {   
+  return (     <SafeAreaView style={styles.container}>       
+    <ScrollView>        
+     <View style={styles.vw1}>           
+     <Text style={styles.txt}>Өдрийн мэнд</Text> 
 
-export default function App() {
-  return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView>
-        <ScrollView style={styles.scroll} horizontal={true} >
-          <View style={styles.draft1}>
-            <Text>1</Text>
-          </View>
-          <View style={styles.draft2}>
-            <Text>2</Text>
-          </View>
-          <View style={styles.draft3}>
-            <Text>3</Text>
-          </View>
-          <View style={styles.draft4}>
-            <Text>4</Text>
-          </View>
-          <View style={styles.draft5}>
-            <Text>5</Text>
-          </View>
-        </ScrollView>
-        <ScrollView style={styles.scroll} horizontal={true}>
-          <View style={styles.draft1}>
-            <Text>1</Text>
-          </View>
-          <View style={styles.draft2}>
-            <Text>2</Text>
-          </View>
-          <View style={styles.draft3}>
-            <Text>3</Text>
-          </View>
-          <View style={styles.draft4}>
-            <Text>4</Text>
-          </View>
-          <View style={styles.draft5}>
-            <Text>5</Text>
-          </View>
-        </ScrollView>
-        <ScrollView style={styles.scroll} horizontal={true}>
-          <View style={styles.draft1}>
-            <Text>1</Text>
-          </View>
-          <View style={styles.draft2}>
-            <Text>2</Text>
-          </View>
-          <View style={styles.draft3}>
-            <Text>3</Text>
-          </View>
-        </ScrollView>
-        <ScrollView style={styles.scroll} horizontal={true}>
-          <View style={styles.draft1}>
-            <Text>1</Text>
-          </View>
-          <View style={styles.draft2}>
-            <Text>2</Text>
-          </View>
-          <View style={styles.draft3}>
-            <Text>3</Text>
-          </View>
-        </ScrollView>
-      </ScrollView>
-    </SafeAreaView>
-  );
-}
+     <MaterialCommunityIcons name="ticket-percent" style={styles.icon} />  
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "pink",
-  },
-  deed: {
-    flex: 4,
-    backgroundColor: "aqua",
-  },
-  dood: {
-    flex: 3,
-    backgroundColor: "yellow",
-  },
-  draft1: {
-    height: 100,
-    width: 100,
-    backgroundColor: "pink",
-    margin: 10,
-  },
-  draft2: {
-    height: 100,
-    width: 100,
-    backgroundColor: "blue",
-    margin: 10,
-  },
-  draft3: {
-    height: 100,
-    width: 100,
-    backgroundColor: "green",
-    margin: 10,
-  },
-  draft4: {
-    height: 100,
-    width: 100,
-    backgroundColor: "yellow",
-    margin: 10,
-  },
-  draft5: {
-    height: 100,
-    width: 100,
-    backgroundColor: "aqua",
-    margin: 10,
-  },
-  scroll: {
-    backgroundColor: "white",
-    flexDirection: "row",
-    padding: 20,
-    margin: 10,
-    height: 270,
-  },
-});
+      <Octicons name="bell-fill" style={styles.icon1} />         
+      </View>          
+      <View style={styles.vw2}>           
+      <View style={styles.ch1}>            
+       <View style={styles.choose1}>             
+        <Text style={styles.choosetxt}>Товч ном</Text>         
+         <Entypo name="triangle-down" style={styles.unguIcon1} />        
+          </View>             
+          <View style={styles.choose2}>           
+            <Text style={styles.choosetxt}>Цахим ном</Text>              
+              <MaterialCommunityIcons     
+                name="rectangle"                 
+                style={styles.unguIcon2}              
+                />            
+          </View>         
+          </View>        
+          <View style={styles.ch2}>          
+          <View style={styles.choose3}>       
+          <Text style={styles.choosetxt}>Аудио ном</Text>               
+           <Entypo name="triangle-right" style={styles.unguIcon1} />           
+           </View>             
+           <View style={styles.choose4}>               
+             <Text style={styles.choosetxt}>Подкаст</Text>              
+             <AntDesign name="heart" style={styles.unguIcon3} />             
+              </View>           
+              </View>         
+              </View>         
+                  <View style={styles.vw3}>         
+              <Text></Text>          
+              <Text></Text>         
+                </View>       
+               </ScrollView>    
+                </SafeAreaView>   ); }  
+                  const styles = StyleSheet.create({  
+                  container: {     
+                   flex: 1,     
+                     backgroundColor: "black",     
+                     padding: 20,   },   
+                     vw1: {     
+                      height: 80,     
+                      width: 350,     
+                      borderColor: "white",     
+                      flexDirection: "row",   
+                    },   
+                    txt: {     
+                      color: "white",     
+                      fontSize: 30,     
+                      paddingTop: 30,     
+                      alignItems: "flex-start",     
+                      fontWeight: "bold",     
+                      paddingLeft: 10,   },   
+                      icon: {     
+                        color: "blue",     
+                        fontSize: 28,     
+                        marginTop: 36,     
+                        marginLeft: 50,   
+                      },   
+                      icon1: {     
+                        color: "blue",     
+                        fontSize: 20,     
+                        marginTop: 41,     
+                        marginLeft: 10,   
+                      },   
+                      vw2: {     
+                        width: 350,     
+                        height: 225,     
+                        backgroundColor: "dimgray",     
+                        borderRadius: 30,     
+                        margin: 15,  
+                       },  
+                        ch1: {     
+                          flexDirection: "row",     
+                          paddingTop: 15,     
+                          paddingLeft: 20,  
+                        },   
+                        ch2: {     
+                          flexDirection: "row",     
+                          paddingTop: 10,     
+                          paddingLeft: 20,   },   choose1: {     width: 150,     height: 90,     backgroundColor: "#48d1cc",     borderRadius: 20,   },   choose2: {     width: 150,     height: 90,     backgroundColor: "#ff4500",     marginLeft: 10,     borderRadius: 20,   },   choose3: {     width: 150,     height: 90,     backgroundColor: "#ffff00",     borderRadius: 20,   },   choose4: {     width: 150,     height: 90,     backgroundColor: "#663399",     marginLeft: 10,     borderRadius: 20,   },   choosetxt: {     fontSize: 20,     fontWeight: "600",     marginTop: 15,     marginLeft: 15,   },   unguIcon1: {     fontSize: 45,     marginLeft: 8,   },   unguIcon2: {     fontSize: 30,     marginTop: 8,     marginLeft: 15,   },   unguIcon3: {     fontSize: 24,     marginTop: 10,     marginLeft: 15,   },   vw3: {     width: 350,     height: 225,     backgroundColor: "#696969",     borderRadius: 30,     margin: 15,   }, });
