@@ -12,7 +12,13 @@ const HomeScreen = () =>{
           </Pressable> 
           <TextInput style={styles.input}/>
           </View>
+
+         
         <ScrollView>
+        {/* <View>
+            <Text style={styles.wv2}>Vagabong</Text>
+          </View> */}
+
           <ScrollView style={styles.scroll} horizontal={true} >
           <View style={styles}>
 
@@ -60,7 +66,7 @@ const HomeScreen = () =>{
           </ScrollView>
   
            <ScrollView style={styles.scroll} horizontal={true} >
-           <View  style={styles.draft4}>
+           <View  style={styles.draft2}>
             <Image source={require("../../assets/vinland.jpg")} style={{height:250, width:300}}></Image>
             </View>
             <View style={styles.draft2}>
@@ -104,12 +110,14 @@ const HomeScreen = () =>{
       backgroundColor: "blue",
       margin: 20,
     },
-    draft3: {
-      height: 100,
-      width: 100,
-      backgroundColor: "green",
-      margin: 10,
-    },
+    vw2: {     
+      width: 350,     
+      height: 225,     
+      backgroundColor: "dimgray",     
+      borderRadius: 30, 
+      borderColor: "pink" ,   
+      margin: 15,  
+      },
     draft4: {
       height: 10,
       width: 10,

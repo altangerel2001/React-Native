@@ -5,7 +5,6 @@ import HomeScreen from './source/screens/Home';
 import DetailScreen from './source/screens/details';
 import TetailScreen2 from './source/screens/details';
 import { SafeAreaView } from 'react-native-safe-area-context';
-
 const Stack = createNativeStackNavigator();
 function App() {
  return (

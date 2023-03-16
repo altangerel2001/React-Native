@@ -18,17 +18,6 @@ const DetailScreen = () =>{
   );
 }
 
-const TetailScreen2 = () =>{
-    return (
-      <SafeAreaView style ={style.container}>
-        <ScrollView>
-          <View>
-            
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    );
-  }
 
 const style = StyleSheet.create({
   container: {
