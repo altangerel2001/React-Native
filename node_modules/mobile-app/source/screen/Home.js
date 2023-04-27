@@ -82,7 +82,8 @@ import { useNavigation } from '@react-navigation/native'
       paddingTop: 30,     
       alignItems: "flex-start",     
       fontWeight: "bold",     
-      paddingLeft: 10,   },   
+      paddingLeft: 10,  
+     },   
     icon: {     
        color: "blue",     
        fontSize: 28,     
