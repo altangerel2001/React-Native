@@ -32,10 +32,6 @@ import { useNavigation } from '@react-navigation/native'
           </TouchableOpacity>
          
             
-            
-            
-           
-           
           <TouchableOpacity onPress={() => navigator.navigate('Details2')}> 
           <View style={styles.choose2}>           
           <Text style={styles.choosetxt}>Цахим ном</Text>   
@@ -48,9 +44,12 @@ import { useNavigation } from '@react-navigation/native'
                  
       <View style={styles.ch2}>          
       <View style={styles.choose3}>       
-          <Text style={styles.choosetxt}>Аудио ном</Text>               
-           <Entypo name="triangle-right" style={styles.unguIcon1} />           
-        </View>             
+      <TouchableOpacity onPress={() => navigator.navigate('AimagList')}> 
+          <Text style={styles.choosetxt}>Aimaglist</Text>           
+           <Entypo name="triangle-right" style={styles.unguIcon1} />   
+          </TouchableOpacity>   
+        </View>    
+                 
            <View style={styles.choose4}>               
              <Text style={styles.choosetxt}>Подкаст</Text>              
              <AntDesign name="heart" style={styles.unguIcon3} />             
